@@ -71,45 +71,9 @@ readStream.pipe(
 )
   
  
-//Event Emmiter
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Event Emmit
 
 // Build our own custom streams 
-
-
-
- 
- 
-
-
-
-
-
- 
-
-
- 
-
-
-
- 
-
-
-
-
 
 // Listners
 const PORT = process.env.PORT
