@@ -58,8 +58,55 @@ fs.createReadStream("./sample.txt").pipe(
 // zipMaker()
  
 
+// Copying data  from one file to another file without using Streams
+  const readableStream =  fs.readFileSync("sample.txt")
+   fs.writeFileSync("./output.txt" , readableStream)
+
+
+
+// Copying data  from one file to another file without using Streams
+const readStream = fs.createReadStream("stream.txt")
+readStream.pipe(
+    fs.createWriteStream("./output.txt")
+)
+  
+ 
+//Event Emmiter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Build our own custom streams 
+
+
 
  
+ 
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+ 
+
 
 
 
