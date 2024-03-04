@@ -2,6 +2,14 @@ require("dotenv").config()
 const server = require("express")
 const app = server()
 
+// Something went wrong 
+
+// const clust = require("cluster")
+// if(clust.isMaster){
+//     console.log(clust.fork())
+// }
+ 
+
 app.get("/" , (req , res)=>{
     res.send(`Hii I am from Server ${process.pid}`)
 })
