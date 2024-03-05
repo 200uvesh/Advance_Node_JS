@@ -1,4 +1,4 @@
-const {Worker , parentPort , workerData  } = require("worker_threads")
+const {Worker} = require("worker_threads")
  
 const totalValue = 100000 
 const worker = new Worker("./worker.js" , {workerData:{totalValue}}
