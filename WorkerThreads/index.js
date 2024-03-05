@@ -1,6 +1,7 @@
 // Basics of Worker Thread 
 const  {Worker , isMainThread , parentPort} = require("worker_threads")
-console.log(isMainThread) // return True or False
+console.log(isMainThread) // return True or False if main thread is present , it return True otherwise false
+
 
 
 //CPU Intensive Task
@@ -10,7 +11,6 @@ console.log(isMainThread) // return True or False
             // Any code which is CPU intensive code
         }
       }
-
 
 
 if(isMainThread){
@@ -38,8 +38,11 @@ else{
     IntensiveTask(1000)
     parentPort.postMessage(" I have completed my task")
 
+   console.log(parentPort.postMessage("For checking")) // it returns true.  
 
 }
+
+
 
 
 

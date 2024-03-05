@@ -1,6 +1,7 @@
 const fs = require("fs")
 
 
+
 // First Change the letter in uppercase and  Write in output file 
 
 //Step1 : Create readStream
@@ -12,7 +13,7 @@ readStream1.on("data" , (chunk)=>{
     console.log("Data received : " , chunk)
     //to change the uppercase 
     const finalStream = chunk.toString().toUpperCase()
-    //to save ina new file 
+    //to save in a new file 
     writeStream.write(finalStream)
 
 })

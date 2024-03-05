@@ -1,3 +1,4 @@
+// To test the random method
 var cluster = require('cluster');
 
 if (cluster.isWorker) {
