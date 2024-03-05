@@ -12,7 +12,8 @@ const os = require("os")
 const express = require("express")
 
 const totalCPU = os.cpus().length
-// console.log(totalCPU)
+console.log(totalCPU)
+
 
 
 if(cluster.isMaster){
