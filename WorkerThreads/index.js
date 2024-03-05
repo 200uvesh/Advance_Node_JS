@@ -12,12 +12,14 @@ console.log(isMainThread) // return True or False
       }
 
 
- 
 
 if(isMainThread){
     console.log("main thread started")
     // Creating worker thread
     const worker = new Worker(__filename)
+    // To find the current file_name and directory_name 
+    console.log(__filename)
+    console.log(__dirname)
 
     // Event handler
     worker.on( "message" ,(msg)=>{
