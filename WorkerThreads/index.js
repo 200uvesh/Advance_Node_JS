@@ -1,4 +1,4 @@
-// Basics of Worker Thread
+// Basics of Worker Thread 
 const  {Worker , isMainThread , parentPort} = require("worker_threads")
 console.log(isMainThread) // return True or False
 
@@ -20,7 +20,7 @@ if(isMainThread){
     // To find the current file_name and directory_name 
     console.log(__filename)
     console.log(__dirname)
-
+    
     // Event handler
     worker.on( "message" ,(msg)=>{
         console.log(`Worker: ${msg}`)
