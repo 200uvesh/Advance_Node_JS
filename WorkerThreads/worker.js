@@ -12,6 +12,4 @@ function IntensiveTask (timeInSecond){
 
   // post a message to Main thread
 parentPort.postMessage(IntensiveTask(workerData.totalValue))
-
-
-
+ 
